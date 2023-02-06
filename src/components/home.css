@@ -5,7 +5,7 @@
 .itembox{
     width:15%;
     height: auto;
-    background-color: blue;
+    background-color: aqua;
     margin-left: 20px;
     /* border-radius: 10px; */
     display: flex;
@@ -79,7 +79,7 @@
   }
   .sidebar{
     width: 15rem;
-       background-color:rgb(7, 8, 4);
+       background-color: aqua;
     display: flex;
     flex-direction: column;
     scroll-behavior: auto;
