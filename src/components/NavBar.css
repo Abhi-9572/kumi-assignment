@@ -28,10 +28,7 @@
 }
 i{
     color:black;
-    /* padding: 2rem; */
-    /* height: 2rem; */
-    /* width: 2rem; */
-    font-size: 1.5rem;
+font-size: 1.5rem;
 }
 .span{
     color: black;
@@ -42,6 +39,6 @@ i{
 }
 .mainHeading{
     color: black;
-margin-top: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-size: 3rem;
 }

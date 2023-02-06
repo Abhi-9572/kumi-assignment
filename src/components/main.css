@@ -3,22 +3,19 @@
     padding: 0;
 }
 .itembox{
-    width:15%;
+    width:30%;
     height: auto;
     background-color: aqua;
     margin-left: 20px;
-    /* border-radius: 10px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     padding: 20px;
-    /* box-sizing: border-box; */
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+   
 }
 .itembox:hover{
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   background-color: #FFE475
 }
 
@@ -33,31 +30,20 @@
 
   }
   .title{
-    /* position: absolute; */
-    font-size: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 1em;
+   
   }
   .removebtn{
-    border-radius: 50%;
-    width: 2.5rem;
+        width: 6rem;
     height: 2.5rem;
     font-size: 1.2rem;
     border: 1px solid black;
-    background-color: green;
+    background-color: rgb(5, 4, 49);
     color: aliceblue;
-    position: absolute;
-    margin-top: 7rem;
-    margin-left: 7rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
-
-  }
-  .removebtn:hover{
-    /* background-color: #FFE475 */
-    color: black;
     
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    box-sizing: border-box;
+}
+  .removebtn:hover{color: black;
   }
   .items{
     display: flex;
@@ -85,7 +71,7 @@
     scroll-behavior: auto;
     
 }
-    /* height: auto; */
+   
 
   
   .sidebtn{
@@ -100,7 +86,7 @@
   }
   .sidebtn:hover{
     background-color: #FFE475
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  
 
   }
   .selectedCategory-Title {
@@ -119,7 +105,7 @@
   .maincontainer{
     padding-top: 5rem;
   }
-  .topbar{
+  .mobile{
     display: none;
   }
   
@@ -132,7 +118,7 @@
       width: 140%;
       white-space: nowrap;
     }
-    .topbar{
+    .mobile{
       display:flex;
       flex-wrap: wrap;
       align-items: center;
@@ -144,9 +130,7 @@
       margin-right: 0.5rem;
       padding: 0.2rem 3rem;
       margin-bottom: 0.5rem;
-      border-radius: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-
+     
     }
     .topbtn:hover{
       background-color: #FFE475

@@ -1,9 +1,9 @@
 import React from 'react'
-import  "./Nav.css"
+import  "./NavBar.css"
 import { Outlet, Link } from "react-router-dom"
 import { useDispatch,useSelector } from 'react-redux';
 
-function Nav() {
+function NavBar() {
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cart);
   return (
@@ -19,4 +19,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default NavBar

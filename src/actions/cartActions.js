@@ -1,12 +1,12 @@
 export const addProductToCart = (product) => ({
-    type: 'ADD_PRODUCT_TO_CART',
+    type: 'ADD_PRODUCT',
     payload: product,
 });
 
 
 export const removeFromCart = (product) => {
     return {
-      type: 'REMOVE_FROM_CART',
+      type: 'REMOVE_PRODUCT',
       payload: product,
     };
   };

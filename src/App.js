@@ -1,13 +1,11 @@
 
 
 import React, { useState, useEffect } from 'react'
-import Nav from './Nav'
 import "./App.css"
-
-import Home from './components/Home';
-import Cart from './components/Cart';
+import Main from './components/Main';
 import { Routes, Route } from "react-router-dom";
 import axios from 'axios'
+import NavBar from './components/NavBar';
 function App() {
 
   const [data, setData] = useState([])
@@ -34,9 +32,9 @@ function App() {
   }, []);
   return (
     <div>
-      <Nav />
+      <NavBar/>
       <Routes>
-        <Route index element={<Home data={data} category={category} />} />
+        <Route index element={<Main data={data} category={category} />} />
       </Routes>
     </div>
   )

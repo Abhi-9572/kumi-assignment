@@ -1,8 +1,8 @@
 import React from "react";
-import './home.css'
-const Topbar = ({category,handlerClick}) => {
+import './main.css'
+const Mobile = ({category,handlerClick}) => {
   return (
-    <div className="topbar">
+    <div className="mobile">
       {category.map((d) => {
         console.log(d)
         return (
@@ -22,4 +22,4 @@ const Topbar = ({category,handlerClick}) => {
   );
 };
 
-export default Topbar;
+export default Mobile;
