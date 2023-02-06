@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
 
+
+import React, { useState, useEffect } from 'react'
+import Nav from './Nav'
+import "./App.css"
+
+import Home from './components/Home';
+import Cart from './components/Cart';
+import { Routes, Route } from "react-router-dom";
+import axios from 'axios'
 function App() {
+
+  const [data, setData] = useState([])
+  const hash = new Set()
+
+  const [category, setCategory] = useState([])
+  useEffect(() => {
+    axios.get("https://dummyjson.com/products")
+      .then(response => {
+        response.data.products.map((data) => {
+          hash.add(data.category)
+
+        })
+        setCategory(hash);
+        console.log(category)
+
+        setData(response.data.products);
+
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+      <Routes>
+        <Route index element={<Home data={data} category={category} />} />
+      </Routes>
     </div>
-  );
+  )
 }
+
 
 export default App;
