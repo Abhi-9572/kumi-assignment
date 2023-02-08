@@ -34,14 +34,15 @@
    
   }
   .removebtn{
-        width: 6rem;
+    border-radius: 50%;
+    width: 2.5rem;
     height: 2.5rem;
     font-size: 1.2rem;
     border: 1px solid black;
-    background-color: rgb(5, 4, 49);
+    background-color: #5640d5;
     color: aliceblue;
-    
-    box-sizing: border-box;
+  box-sizing: border-box;
+  
 }
   .removebtn:hover{color: black;
   }

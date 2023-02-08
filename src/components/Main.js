@@ -56,8 +56,8 @@ export default function Main({ data, category }) {
             return (<div key={val.id} className="itembox">
               <div className="image"><img className='img' src={val.images[0]} />
               </div>
-              {!cartitems.includes(val.id) ? <button className='removebtn' onClick={() => handleAddToCart(val)}>Add</button>
-                : <button className='removebtn' onClick={() => handleRemoveFromCart(val)}>Remove</button>}
+              {!cartitems.includes(val.id) ? <button className='removebtn' onClick={() => handleAddToCart(val)}>+</button>
+                : <button className='removebtn' onClick={() => handleRemoveFromCart(val)}>-</button>}
 
             </div>)
           })
@@ -67,8 +67,8 @@ export default function Main({ data, category }) {
             if (val.category != product[0]?.category) {
               return (<div key={val.id} className="itembox">
                 <div className="image"><img className='img' src={val.images[0]} /></div>
-                {!cartitems.includes(val.id) ? <button className='removebtn' onClick={() => handleAddToCart(val)}>Add</button>
-                  : <button className='removebtn' onClick={() => handleRemoveFromCart(val)}>Remove</button>}
+                {!cartitems.includes(val.id) ? <button className='removebtn' onClick={() => handleAddToCart(val)}>+</button>
+                  : <button className='removebtn' onClick={() => handleRemoveFromCart(val)}>-</button>}
               </div>)
             }
           })
